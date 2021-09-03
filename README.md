@@ -16,8 +16,9 @@ toy_project_core
 </th:block>
 </html>
 ```
-- 상단에 layout:decorator="~{layout/layout}" 은 기본 레이아웃을 layout/layout.html 파일을 사용하겠다라는 선언하는 것 입니다.
-- <th:block layout:fragment="content"> 아래에 코드를 작성하게 되면, layout.html에서 content라는 부분에 위치하도록 합니다.
-- 각 파일마다 content 아래에 코드를 작성하시면서 개발을 하시면 됩니다.
+- top, footer, sidebar 각 공통 html에 main.html 안에 있는 각 영역에 해당하는 코드부분 찾아서 넣어줌
+- layout:decorator="~{layout/layout}":  기본 레이아웃을 layout/layout.html 파일을 사용하겠다라는 선언
+- <th:block layout:fragment="content"> 아래에 코드를 작성하게 되면, layout.html에서 content라는 부분에 위치
+- 각 파일마다 content 아래에 코드를 작성하시면서 개발 진행
 
 
